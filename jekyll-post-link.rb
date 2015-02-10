@@ -69,7 +69,7 @@ eos
         # check if the site is in staging mode and use dummy links
         if not Dir["./_stash/*"].empty?
           # staging mode
-          return "<a href=\"http://flohei.de\">Temporary Staging Link</a>" 
+          return "<a href=\"#{ site.base }\">Temporary Staging Link</a>" 
         end
 
         site.posts.each do |p|
